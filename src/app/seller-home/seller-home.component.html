@@ -1,0 +1,76 @@
+<div class="product-list">
+    <h1>All Product List</h1>
+    <p class="message-p">{{ productMessage }}</p>
+
+    <!-- <mat-form-field appearance="fill">
+        <mat-label>Filter Order Id</mat-label>
+        <input matInput (input)="applyFilter($event)" placeholder="Ex. Mia" #input>
+      </mat-form-field> -->
+
+
+      <mat-table [dataSource]="productList" class="mat-elevation-z8">
+  
+      <!-- Image Column -->
+      <ng-container matColumnDef="image">
+        <mat-header-cell *matHeaderCellDef> Image </mat-header-cell>
+        <mat-cell *matCellDef="let item"> <img [src]="item.image" alt="Product Image"> </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.name }} </mat-cell>
+      </ng-container>
+  
+      <!-- Price Column -->
+      <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.price }} </mat-cell>
+      </ng-container>
+  
+      <!-- Color Column -->
+      <ng-container matColumnDef="color">
+        <mat-header-cell *matHeaderCellDef> Color </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.color }} </mat-cell>
+      </ng-container>
+  
+      <!-- Category Column -->
+      <ng-container matColumnDef="category">
+        <mat-header-cell *matHeaderCellDef> Category </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.category }} </mat-cell>
+      </ng-container>
+  
+      <!-- Description Column -->
+      <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef> Description </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.description }} </mat-cell>
+      </ng-container>
+  
+      <!-- Delete Column -->
+      <ng-container matColumnDef="delete">
+        <mat-header-cell *matHeaderCellDef> Delete </mat-header-cell>
+        <mat-cell *matCellDef="let item">
+          <button mat-icon-button (click)="deleteProduct(item.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+  
+      <!-- Update Column -->
+      <ng-container matColumnDef="update">
+        <mat-header-cell *matHeaderCellDef> Update </mat-header-cell>
+        <mat-cell *matCellDef="let item">
+          <a class="adjust-update-link" routerLink="/seller-update-product/{{ item.id }}">
+            <button mat-icon-button>
+              <mat-icon>edit</mat-icon>
+            </button>
+          </a>
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="['image', 'name', 'price', 'color', 'category', 'description', 'delete', 'update']"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: ['image', 'name', 'price', 'color', 'category', 'description', 'delete', 'update']"></mat-row>
+  
+    </mat-table>
+  </div>
+  

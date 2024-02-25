@@ -1,0 +1,249 @@
+
+.item1 {
+    margin-top: 15px;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(36, 36, 36, 0.36);
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.item2 {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.item3 {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-left: 50px;
+    margin-right: 50px;
+    /* display: inline-block; */
+}
+
+.slider-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.item4 {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 2005px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.item5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+
+
+ .category-name {
+    margin-right: 10px;
+}
+
+.item5 img {
+    max-width: 120px;
+    height: 90px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+
+
+
+
+#section-container{
+    margin-top: 15px;
+    width: 100%;
+    height: 220pxpx;
+    background-color: rgba(36, 36, 36, 0.36);
+}
+.product{
+    padding: 20px 0;
+}
+.slider-wrap{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+.slider-main{
+    position: absolute;
+    width: 200%;
+}
+.item{
+    /* display: inline-block; */
+    width: 345px;
+    height: 150px;
+    background-color: rgb(151, 2, 2);
+    position: relative;
+    margin: 0 12px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text img{
+    max-width: 120px;
+    height: 90px;
+    margin-right: 5px;
+}
+.prev{
+    position: absolute;
+    left:33px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.next{
+    position: absolute;
+    right: -7px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+
+
+
+
+
+
+.slider-container-org{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 240px;
+    padding:15px 0px ;
+    background-image: linear-gradient(blue, yellow,green)
+    ;
+    border: 2px solid black;
+  }
+
+  .slider-heading-org{
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  .slider-wrap-org{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+  }
+  .slider-main-org{
+    position: absolute;
+    width: 1000%;
+  }
+  .item{
+    display: inline-block;
+    width: 225px;
+    height: 120px;
+    background-color: white;
+    position: relative;
+    margin: 0 12px;
+  }
+  .item5-org {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+  }
+
+  .category-name-org {
+    margin-right: 10px;
+  }
+
+  .item5-org img {
+    max-width: 120px;
+    height: 107px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  .prev-org{
+    position: absolute;
+    left:23px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .prev-org:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .next-org{
+    position: absolute;
+    right:-20px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .next-org:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+
+
+
+
+.product-header-image {
+    object-fit: contain;
+    width: 100%;
+    height: 600px;
+}
+
+.product-item {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.product-item .product-details {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.product-item .name-head {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-item h6 {
+    text-align: center;
+}
+
+.product-item .product-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}

@@ -1,0 +1,19 @@
+.add-product {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-button {
+  width: 100%;
+}
+
+.message-p {
+  color: red; /* Adjust the color as needed */
+}

@@ -1,0 +1,34 @@
+<div class="update-product">
+  <h1>Update Product</h1>
+  <p class="message-p">{{ productMessage }}</p>
+
+  <form #updateProductForm="ngForm" (ngSubmit)="submit(updateProductForm.value)" class="common-form">
+
+    <mat-form-field class="form-field">
+      <input matInput [(ngModel)]="productData.name" name="name" placeholder="Enter Product Name" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <input matInput [(ngModel)]="productData.price" name="price" placeholder="Enter Product Price" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <input matInput [(ngModel)]="productData.color" name="color" placeholder="Enter Product Color" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <input matInput [(ngModel)]="productData.category" name="category" placeholder="Enter Product Category" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <textarea matInput [(ngModel)]="productData.description" name="description" placeholder="Enter Product Description" required></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <input matInput [(ngModel)]="productData.image" name="image" placeholder="Enter Product Image URL" required>
+    </mat-form-field>
+
+    <button mat-raised-button class="form-button" color="primary">Update Product</button>
+
+  </form>
+</div>

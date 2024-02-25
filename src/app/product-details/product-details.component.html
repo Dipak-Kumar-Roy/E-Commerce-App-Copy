@@ -1,0 +1,264 @@
+<mat-card *ngIf="productData" class="product-details">
+  <mat-card-content class="row">
+    <div class="col-md-6" id="image-container">
+      <mat-card class="show-image">
+        <img class="product-image" [src]="productData.image" alt="">
+      </mat-card>
+      <mat-card class="button-image">
+        <div *ngFor="let image of images;">
+          <mat-card mat-icon-button (click)="changeImage(image)">
+            <img class="product-image" [src]="image" alt="">
+          </mat-card>
+        </div>
+      </mat-card>
+    </div>
+
+    <mat-card class="col-md-6 details">
+      <h1>{{productData.name}}</h1>
+      <mat-divider></mat-divider>
+      <h3>Price: {{productData.price}}</h3>
+
+      <div>
+        Color:
+        <div [style.backgroundColor]="productData.color" class="product-color"></div>
+      </div>
+      <h6>Category: {{productData.category}}</h6>
+      <h6>Description: {{productData.description}}</h6>
+
+      <div class="quantity-group">
+        <button mat-icon-button (click)="handleQuantity('min')">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <input matInput type="text" [value]="productQuantity" disabled>
+        <button mat-icon-button (click)="handleQuantity('plus')">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+      <div class="button-contr">
+        <button mat-raised-button color="primary" routerLink="/cart-page" class="button-comm">Buy Now</button>
+        <button *ngIf="removeCart" mat-raised-button color="warn" class="form-button"
+          (click)="removeToCart(productData.id)">Remove to Cart</button>
+        <button *ngIf="!removeCart" mat-raised-button color="primary" class="form-button" (click)="addToCart()">Add to
+          Cart</button>
+      </div>
+    </mat-card>
+  </mat-card-content>
+</mat-card>
+
+
+<div class="Specifications-accordion">
+  <mat-accordion>
+    <mat-expansion-panel   class="Specifications-expen">
+      <mat-expansion-panel-header>
+        <h1>
+          Specifications
+        </h1>
+      </mat-expansion-panel-header>
+
+
+      <mat-card class="expansion_panel_header_0">
+        <h2> Product Category</h2>
+        <mat-card class="expansion_panel_header_1">
+          <mat-card class="expansion_panel_header_2">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+
+          </mat-card>
+          <mat-card class="expansion_panel_header_3">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+
+          </mat-card>
+          <mat-card class="expansion_panel_header_4">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+          </mat-card>
+
+        </mat-card>
+      </mat-card>
+
+
+      <mat-divider></mat-divider>
+      <mat-card class="expansion_panel_header_0">
+        <h2> Product Category</h2>
+        <mat-card class="expansion_panel_header_1">
+          <mat-card class="expansion_panel_header_2">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+
+          </mat-card>
+          <mat-card class="expansion_panel_header_3">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+
+          </mat-card>
+          <mat-card class="expansion_panel_header_4">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+          </mat-card>
+        </mat-card>
+      </mat-card>
+      <div class="view_button"  >
+        <div *ngIf="showContent">
+
+
+          <mat-divider></mat-divider>
+      <mat-card class="expansion_panel_header_0">
+        <h2> Product Category</h2>
+        <mat-card class="expansion_panel_header_1">
+          <mat-card class="expansion_panel_header_2">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+          </mat-card>
+        </mat-card>
+      </mat-card>
+
+
+      <mat-divider></mat-divider>
+      <mat-card class="expansion_panel_header_0">
+        <h2> Product Category</h2>
+        <mat-card class="expansion_panel_header_1">
+          <mat-card class="expansion_panel_header_2">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+          </mat-card>
+        </mat-card>
+      </mat-card>
+
+      <mat-divider></mat-divider>
+      <mat-card class="expansion_panel_header_0">
+        <h2> Product Category</h2>
+        <mat-card class="expansion_panel_header_1">
+          <mat-card class="expansion_panel_header_2">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+
+          </mat-card>
+          <mat-card class="expansion_panel_header_3">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+
+          </mat-card>
+          <mat-card class="expansion_panel_header_4">
+            <h4> Device Type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, itaque! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Officia velit a ipsum similique id aperiam sunt aliquam voluptas illum
+              voluptatem natus assumenda, iure deserunt in!</p>
+          </mat-card>
+
+
+        </mat-card>
+      </mat-card>
+        </div>
+
+
+        <button mat-button color="accent"(click)="toggleContent()">
+          {{ showContent ? 'View Less' : 'View More' }}
+        </button>
+      </div>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
+
+
+
+
+
+
+<div class="read-more">
+  <ng-container *ngIf="!displayContent; else fullContent">
+    <p>{{ content | slice:0:4 }}</p>
+    <button mat-button color="accent" (click)="togglesContent()">Read More</button>
+  </ng-container>
+  <ng-template #fullContent>
+    <p>{{ content }}</p>
+    <button mat-button color="accent" (click)="togglesContent()">Read Less</button>
+  </ng-template>
+</div>
+
+
+
+
+
+<div class="Specifications-accordion_org">
+  <mat-accordion>
+    <mat-expansion-panel  class="Specifications-expen_org">
+      <mat-expansion-panel-header>
+        <h1>
+         Overview
+        </h1>
+      </mat-expansion-panel-header>
+
+      <h3>why you buy this product</h3>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellat.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellat.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellat.</li><br><br><br>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellat.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellat.</li>
+      <br><br><br>
+      <div  class="view_button">
+        <div *ngIf="showContent">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet enim dolores ducimus. Adipisci id vero ipsam ratione nostrum maiores consequatur aliquam rerum sunt quia veniam reprehenderit beatae, quibusdam veritatis obcaecati ullam expedita! Laboriosam rem harum, consectetur illum ullam quibusdam mollitia earum, numquam, quisquam debitis provident! Molestiae officia deserunt veritatis ducimus.  dolor, sit amet consectetur adipisicing elit. Amet enim dolores ducimus. Adipisci id vero ipsam ratione nostrum maiores consequatur aliquam rerum sunt quia veniam reprehenderit beatae, quibusdam veritatis obcaecati ullam expedita! Laboriosam rem harum, consectetur illum ullam quibusdam mollitia earum, numquam, quisquam debitis provident! Molestiae officia deserunt veritatis ducimus.</p>
+<br><br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet enim dolores ducimus. Adipisci id vero ipsam ratione nostrum maiores consequatur aliquam rerum sunt quia veniam reprehenderit beatae, quibusdam veritatis obcaecati ullam expedita! Laboriosam rem harum, consectetur illum ullam quibusdam mollitia earum, numquam, quisquam debitis provident! Molestiae officia deserunt veritatis ducimus.  dolor, sit amet consectetur adipisicing elit. Amet enim dolores ducimus. Adipisci id vero ipsam ratione nostrum maiores consequatur aliquam rerum sunt quia veniam reprehenderit beatae, quibusdam veritatis obcaecati ullam expedita! Laboriosam rem harum, consectetur illum ullam quibusdam mollitia earum, numquam, quisquam debitis provident! Molestiae officia deserunt veritatis ducimus.</p>
+        </div>
+        <button   mat-button color="accent" (click)="toggleContent()">
+          {{ showContent ? 'View Less' : 'View More' }}
+        </button>
+      </div>
+
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
+
+
+
+
+
+<!-- <mat-accordion>
+  <mat-expansion-panel  class="indicator" >
+    <mat-expansion-panel-header style="background-color: red;  color:green;">
+      <mat-panel-title>
+        This is the expansion title
+      </mat-panel-title>
+
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+</mat-accordion> -->
+
+<mat-accordion>
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        This is the expansion title
+      </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+</mat-accordion>

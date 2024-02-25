@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Adjust the font-family as needed */
+  background-color: #f5f5f5; /* Set your desired background color */
+}
+
+/* Container for the card */
+.user-auth {
+  width: 400px; /* Set your desired width */
+  margin: auto;
+  margin-top: 50px; /* Adjust the top margin as needed */
+}
+
+/* Common form styles */
+.common-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form input styles */
+.form-input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Form button styles */
+.form-button {
+  margin-top: 15px;
+  background-color: #1976D2;
+}
+
+/* Authentication toggle link styles */
+
+
+/* Authentication toggle link styles */
+a {
+  color: #1976D2; /* Set your desired link color */
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal; /* Set your desired font weight */
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold; /* Set your desired font weight on hover */
+}
+
+
+
+/* Error message styles */
+.error-p {
+  color: #FF0000; /* Set your desired error text color */
+  margin-bottom: 15px;
+}
+
+/* Invalid input message styles */
+.invalid-input {
+  color: #FF0000; /* Set your desired invalid input text color */
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* Card title styles */
+h2 {
+  text-align: center;
+  font-size: 1.5em; /* Adjust the font size as needed */
+  margin-bottom: 15px;
+}
+
+/* Card elevation shadow */
+.mat-elevation-z1 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* .user-auth {
+  width:50%;
+margin-left:20%;
+margin-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  
+  .user-auth mat-card-title {
+    color: blueviolet;
+  }
+  
+  .user-auth {
+    margin-bottom: 100px;
+  }
+  
+  .user-auth a {
+    color: blueviolet;
+    cursor: pointer;
+  }
+  
+  .common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .form-input {
+    margin-bottom: 20px;
+  }
+  
+  .form-button {
+    height: 35px;
+    cursor: pointer;
+  }
+  
+  .error-p {
+    color: red;
+  }
+  
+  .invalid-input {
+    color: red;
+  } */
+  
+
+
+/* .user-auth h1{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    color: blueviolet;  
+    text-align: center; 
+}
+
+.user-auth {
+    margin-bottom: 100px;
+}
+.user-auth a{
+    color: blueviolet;
+    cursor: pointer;
+} */

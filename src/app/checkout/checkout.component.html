@@ -1,0 +1,72 @@
+
+<div class="checkout">
+  <mat-card>
+    <h1> <mat-card>  Checkout </mat-card></h1>
+    <div class="row">
+      <div class="col-sm-7">
+        <mat-card>
+        <h3>Add shipping address</h3>
+        <p class="message-p">{{orderMsg}}</p>
+        <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" name="email" placeholder="Enter User Email" ngModel>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" name="address" placeholder="Enter User Address" ngModel>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" name="contact" placeholder="Enter contact details" ngModel>
+          </mat-form-field>
+          <button mat-raised-button color="primary" class="form-button">Order Now</button>
+        </form>
+      </mat-card>
+      </div>
+      <div class="col-sm-5">
+        <mat-card>
+        <h3>Total Amount: {{totalPrice}}</h3>
+        <h4>Payment Method : <b>Pay on delivery</b></h4>
+      </mat-card>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
+
+
+<!-- <div class="checkout">
+    <h1>Checkout</h1>
+    <div class="row">
+      <div class="col-sm-7">
+        <h3>Add shipping address</h3>
+        <p class="message-p">{{orderMsg}}</p>
+        <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
+          <input
+            type="text"
+            class="form-input"
+            name="email"
+            placeholder="Enter User Email"
+            ngModel
+          />
+          <input
+            type="text"
+            class="form-input"
+            name="address"
+            placeholder="Enter User Address"
+            ngModel
+          />
+          <input
+            type="text"
+            class="form-input"
+            name="contact"
+            placeholder="Enter contact details"
+            ngModel
+          />
+          <button class="form-button">Order Now</button>
+        </form>
+      </div>
+      <div class="col-sm-5">
+          <h3>Total Amount: {{totalPrice}}</h3>
+          <h4>Payment Method : <b>Pay on delivery</b></h4>
+      </div>
+    </div>
+  </div> -->

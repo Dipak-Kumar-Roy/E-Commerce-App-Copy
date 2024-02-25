@@ -1,0 +1,466 @@
+{
+  "seller": [
+    {
+      "name": "Dipak",
+      "email": "dipakroy9865@gmail.com",
+      "password": "abc@123",
+      "id": "1"
+    },
+    {
+      "name": "Priyanshu Kumar Roy",
+      "email": "priyanshuroy9865@gmail.com",
+      "password": "abc@123",
+      "id": "2"
+    },
+    {
+      "name": "tonny",
+      "email": "tonny@gmail.com",
+      "password": "abc@123",
+      "id": "3"
+    },
+    {
+      "name": "petre ",
+      "email": "peter@gmail.com",
+      "password": "abc@123",
+      "id": "4"
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@gmail.com",
+      "password": "abc@123",
+      "id": "5"
+    }
+  ],
+  "products": [
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "1"
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "2"
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": "4"
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": "5"
+    },
+    {
+      "name": "Truck",
+      "price": "1000",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": "6"
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "200",
+      "color": "Black",
+      "category": "Watch",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": "7"
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "9"
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": "10"
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": "11"
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": "12"
+    },
+    {
+      "name": "Truck",
+      "price": "1000",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": "13"
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": "14"
+    },
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "15"
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "16"
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": "17"
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": "18"
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": "19"
+    },
+    {
+      "name": "Truck",
+      "price": "1000",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": "20"
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "200",
+      "color": "Black",
+      "category": "Watch",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": "21"
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "22"
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": "23"
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": "24"
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": "25"
+    },
+    {
+      "name": "Truck",
+      "price": "1000",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": "26"
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": "27"
+    }
+  ],
+  "users": [
+    {
+      "name": "Dipak",
+      "email": "dipakroy9865@gmail.com",
+      "password": "abc@123",
+      "id": "1"
+    },
+    {
+      "name": "peter",
+      "email": "peter@users.com",
+      "password": "abc@123",
+      "id": "2"
+    },
+    {
+      "name": "tony",
+      "email": "tony@user.com",
+      "password": "abc@123",
+      "id": "3"
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@test.com",
+      "password": "abc@123",
+      "id": "4"
+    },
+    {
+      "id": "7be1",
+      "name": "",
+      "email": "",
+      "password": ""
+    }
+  ],
+  "cart": [
+    {
+      "id": "648e",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "quantity": 1,
+      "userId": "e7bc",
+      "productId": "3"
+    },
+    {
+      "id": "04c7",
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "quantity": 1,
+      "userId": "8efc",
+      "productId": "4"
+    },
+    {
+      "id": "1bf0",
+      "name": "Truck",
+      "price": "1000",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "quantity": 1,
+      "userId": "8efc",
+      "productId": null
+    },
+    {
+      "id": "dfc2",
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "quantity": 5,
+      "userId": "8efc",
+      "productId": "14"
+    },
+    {
+      "id": "e097",
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "quantity": 1,
+      "userId": "8efc",
+      "productId": "12"
+    },
+    {
+      "id": "cd0b",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "quantity": 9,
+      "userId": "1",
+      "productId": "3"
+    }
+  ],
+  "orders": [
+    {
+      "id": "4a2c",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 650,
+      "userId": "7be1"
+    },
+    {
+      "id": "0305",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 50100,
+      "userId": "7be1"
+    },
+    {
+      "id": "a97d",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 50100,
+      "userId": "7be1"
+    },
+    {
+      "id": "3ae5",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 3100,
+      "userId": "7be1"
+    },
+    {
+      "id": "8307",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 2100,
+      "userId": "7be1"
+    },
+    {
+      "id": "4a84",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 1100,
+      "userId": "7be1"
+    },
+    {
+      "id": "82b6",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 100100,
+      "userId": "7be1"
+    },
+    {
+      "id": "6c5d",
+      "email": "dipakroy9865@gmail.com",
+      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "contact": "6371469865",
+      "totalPrice": 5100,
+      "userId": "7be1"
+    },
+    {
+      "id": "3c55",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 209650,
+      "userId": "1"
+    },
+    {
+      "id": "864f",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 209650,
+      "userId": "1"
+    },
+    {
+      "id": "4133",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 5050,
+      "userId": "1"
+    }
+  ]
+}

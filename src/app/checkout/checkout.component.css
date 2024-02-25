@@ -1,0 +1,120 @@
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+mat-card {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-7 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.col-sm-5 {
+    flex: 1;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+message-p {
+    margin-bottom: 15px;
+    color: green;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.form-button {
+    margin-top: 15px;
+    width: 100%; /* Make the button take full width */
+}
+
+
+/* .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  mat-card {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-sm-7 {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .col-sm-5 {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  message-p {
+    margin-bottom: 15px;
+    color: green;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .form-button {
+    margin-top: 15px;
+  } */
+  
+  /* Add any additional styling based on your design preferences */
+  
+
+/* .checkout h1{
+    text-align:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.checkout h3{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+} */
