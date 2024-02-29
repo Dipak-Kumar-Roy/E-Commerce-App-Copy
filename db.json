@@ -361,14 +361,14 @@
       "productId": "12"
     },
     {
-      "id": "cd0b",
+      "id": "07ab",
       "name": "HP Laptop",
       "price": "50000",
       "category": "Laptop",
       "color": "black",
       "description": "Hp laptop for student and professionals",
       "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
-      "quantity": 9,
+      "quantity": 1,
       "userId": "1",
       "productId": "3"
     }

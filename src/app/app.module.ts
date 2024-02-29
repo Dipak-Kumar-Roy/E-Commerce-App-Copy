@@ -34,8 +34,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatExpansionModule} from '@angular/material/expansion';
 
-import { PrevDirective } from './directives/prev.directive';
+
 import { NextDirective } from './directives/next.directive';
+import { PrevDirective } from './directives/prev.directive';
+
+
 
 
 @NgModule({
@@ -54,9 +57,9 @@ import { NextDirective } from './directives/next.directive';
     CartPageComponent,
     CheckoutComponent,
     MyOrdersComponent,
-
+    NextDirective,
     PrevDirective,
-       NextDirective,
+
 
 
 

@@ -1,117 +1,117 @@
 <mat-card>
     <div class="my-orders">
       <h1>My-Orders</h1>
-  
+
       <mat-form-field appearance="fill">
         <mat-label>Filter Order Id</mat-label>
         <input matInput (input)="applyFilter($event)" placeholder="Ex. Mia" #input>
       </mat-form-field>
-      
+
       <mat-table [dataSource]="orderData" matSort class="mat-elevation-z5">
-  
+
         <ng-container matColumnDef="orderImage">
           <mat-header-cell *matHeaderCellDef> Order Image </mat-header-cell>
           <mat-cell *matCellDef="let order">
             <img class="order-img" [src]="order.imageSrc" alt="Order Image">
           </mat-cell>
         </ng-container>
-  
+
         <ng-container matColumnDef="orderId">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Order Id </mat-header-cell>
           <mat-cell *matCellDef="let order"> {{order.id}} </mat-cell>
         </ng-container>
-  
+
         <ng-container matColumnDef="price">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
           <mat-cell *matCellDef="let order"> {{order.totalPrice}} </mat-cell>
         </ng-container>
-  
+
         <ng-container matColumnDef="status">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
           <mat-cell *matCellDef="let order"> In Progress </mat-cell>
         </ng-container>
-  
+
         <ng-container matColumnDef="cancelOrder">
           <mat-header-cell *matHeaderCellDef> Cancel Order </mat-header-cell>
           <mat-cell *matCellDef="let order">
             <button  mat-raised-button color="accent" (click)="cancelOrder(order.id)">Cancel Order</button>
           </mat-cell>
         </ng-container>
-  
+
         <mat-header-row *matHeaderRowDef="['orderImage', 'orderId', 'price', 'status', 'cancelOrder']"></mat-header-row>
         <mat-row *matRowDef="let row; columns: ['orderImage', 'orderId', 'price', 'status', 'cancelOrder']"></mat-row>
-  
+
       </mat-table>
-  
+
       <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
     </div>
   </mat-card>
-  
+
 
 
 <!-- <mat-card>
 <div class="my-orders">
-    
+
     <h1> My-Orders </h1>
 
   <mat-form-field>
         <mat-label>Filter Order Id</mat-label>
         <input matInput (input)="applyFilter($event)"placeholder="Ex. Mia" #input>
-      </mat-form-field> 
-    
+      </mat-form-field>
+
     <mat-table [dataSource]="orderData" matSort class="mat-elevation-z8">
-        
-      
+
+
       <ng-container matColumnDef="orderImage">
         <mat-header-cell *matHeaderCellDef> Order Image </mat-header-cell>
         <mat-cell *matCellDef="let order">
           <img class="order-img" [src]="order.imageSrc" alt="Order Image">
         </mat-cell>
       </ng-container>
-  
-     
+
+
       <ng-container matColumnDef="orderId">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Order Id </mat-header-cell>
         <mat-cell *matCellDef="let order"> {{order.id}} </mat-cell>
       </ng-container>
-  
-     
+
+
       <ng-container matColumnDef="price">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
         <mat-cell *matCellDef="let order"> {{order.totalPrice}} </mat-cell>
       </ng-container>
-  
-   
+
+
       <ng-container matColumnDef="status">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
         <mat-cell *matCellDef="let order"> In Progress </mat-cell>
       </ng-container>
-  
-      
+
+
       <ng-container matColumnDef="cancelOrder">
         <mat-header-cell *matHeaderCellDef> Cancel Order </mat-header-cell>
         <mat-cell *matCellDef="let order">
           <button mat-button (click)="cancelOrder(order.id)">Cancel Order</button>
         </mat-cell>
       </ng-container>
-  
- 
+
+
       <mat-header-row *matHeaderRowDef="['orderImage', 'orderId', 'price', 'status', 'cancelOrder']"></mat-header-row>
       <mat-row *matRowDef="let row; columns: ['orderImage', 'orderId', 'price', 'status', 'cancelOrder']"></mat-row>
-  
+
     </mat-table>
-  
+
     <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
   </div>
 </mat-card>  -->
-  
+
 
 <!-- <mat-card>
     <div class="my-orders">
-  
+
       <h1>Orders</h1>
-  
-   
+
+
       <mat-form-field>
         <mat-label>Filter Order Id</mat-label>
         <input matInput (input)="applyFilter($event.target.value)" placeholder="Enter Order Id">
@@ -120,22 +120,22 @@
 
 
       </mat-form-field>
-  
+
       <mat-table [dataSource]="orderData" matSort class="mat-elevation-z8">
-  
-        
+
+
         <ng-container matColumnDef="orderId">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Order Id </mat-header-cell>
           <mat-cell *matCellDef="let order"> {{order.id}} </mat-cell>
         </ng-container>
-  
+
     (Other columns remain the same)
-  
+
           <mat-header-row *matHeaderRowDef="['orderImage', 'orderId', 'price', 'status', 'cancelOrder']"></mat-header-row>
         <mat-row *matRowDef="let row; columns: ['orderImage', 'orderId', 'price', 'status', 'cancelOrder']"></mat-row>
-  
+
       </mat-table>
-  
+
       <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
     </div>
   </mat-card> -->
@@ -146,50 +146,50 @@
 
 <!-- <div class="my-orders">
     <h1>My Orders</h1>
-    
+
     <mat-table [dataSource]="orderData" matSort class="mat-elevation-z8">
-  
-     
+
+
       <ng-container matColumnDef="orders">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Orders </mat-header-cell>
-        <mat-cell *matCellDef="let order"> 
+        <mat-cell *matCellDef="let order">
           <img class="order-img" src="https://www.clipartmax.com/png/middle/210-2106541_track-my-order-beach-volleyball.png" alt="">
         </mat-cell>
       </ng-container>
-  
-      
+
+
       <ng-container matColumnDef="orderId">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Order Id </mat-header-cell>
         <mat-cell *matCellDef="let order"> {{order.id}} </mat-cell>
       </ng-container>
-  
+
       <ng-container matColumnDef="price">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
         <mat-cell *matCellDef="let order"> {{order.totalPrice}} </mat-cell>
       </ng-container>
-  
-     
+
+
       <ng-container matColumnDef="status">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
         <mat-cell *matCellDef="let order"> In Progress </mat-cell>
       </ng-container>
-  
-      
+
+
       <ng-container matColumnDef="cancelOrder">
         <mat-header-cell *matHeaderCellDef> Cancel Order </mat-header-cell>
-        <mat-cell *matCellDef="let order"> 
+        <mat-cell *matCellDef="let order">
           <button mat-button (click)="cancelOrder(order.id)">Cancel Order</button>
         </mat-cell>
       </ng-container>
-  
+
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  
+
     </mat-table>
-  
+
     <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
   </div> -->
-  
+
 
 
 <!-- <div class="my-orders">
@@ -228,5 +228,5 @@
             <button class="form-button" (click)="cancelOrder(order.id)">Cancel Order</button>
         </div>
     </div>
-    
+
 </div> -->
