@@ -118,11 +118,11 @@
 
 <mat-card class="product-list-wrapper">
   <h1 class="mat-h1">Trendy Products</h1>
-  <div class="mat-elevation-z4 row">
-    <mat-card class="col-sm-3 product-card" *ngFor="let item of trendyProducts">
+  <div  class="mat-elevation-z4 row">
+    <mat-card  class="col-sm-3 product-card" *ngFor="let item of trendyProducts">
       <div class="product-item">
         <a routerLink="/details/{{item.id}}">
-          <img mat-card-image [src]="item.image" alt="{{item.name}}">
+          <img  mat-card-image [src]="item.image" alt="{{item.name}}">
         </a>
         <div class="product-details">
           <h6 class="mat-h6">{{ item.name }}</h6>

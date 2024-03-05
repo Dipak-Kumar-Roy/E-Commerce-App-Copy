@@ -8,7 +8,7 @@ export class PrevDirective {
   constructor(private el: ElementRef) { }
 
   @HostListener('click')
-  nextFunc(){
+  prevFunc(){
     console.log(this.el.nativeElement)
     let elm = this.el.nativeElement.parentElement.parentElement.children[0];
     console.log(elm)

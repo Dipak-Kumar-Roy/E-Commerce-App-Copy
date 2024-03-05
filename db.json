@@ -33,19 +33,10 @@
   ],
   "products": [
     {
-      "name": "Samsung m 40 a ",
-      "price": "550",
-      "category": "mobile",
-      "color": "white",
-      "description": "this is a Samsung product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": "1"
-    },
-    {
       "name": "I phone 14",
       "price": "100000",
-      "category": "mobile",
       "color": "black",
+      "category": "mobile",
       "description": "An Apple Product",
       "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
       "id": "2"
@@ -359,18 +350,6 @@
       "quantity": 1,
       "userId": "8efc",
       "productId": "12"
-    },
-    {
-      "id": "07ab",
-      "name": "HP Laptop",
-      "price": "50000",
-      "category": "Laptop",
-      "color": "black",
-      "description": "Hp laptop for student and professionals",
-      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
-      "quantity": 1,
-      "userId": "1",
-      "productId": "3"
     }
   ],
   "orders": [
@@ -439,14 +418,6 @@
       "userId": "7be1"
     },
     {
-      "id": "3c55",
-      "email": "",
-      "address": "",
-      "contact": "",
-      "totalPrice": 209650,
-      "userId": "1"
-    },
-    {
       "id": "864f",
       "email": "",
       "address": "",
@@ -461,6 +432,39 @@
       "contact": "",
       "totalPrice": 5050,
       "userId": "1"
+    },
+    {
+      "id": "08f4",
+      "email": "dipakroy9865@gmail.com",
+      "address": "2300075",
+      "contact": "6371469865",
+      "totalPrice": 50100,
+      "userId": "1"
+    },
+    {
+      "id": "b5d5",
+      "email": "dipakroy9865@gmail.com",
+      "address": "S/O : Praphulla Chandra Roy, ",
+      "contact": "6371469865",
+      "totalPrice": 50100,
+      "userId": "1"
+    },
+    {
+      "id": "9945",
+      "email": "dipakroy9865@gmail.com",
+      "address": "2300075",
+      "contact": "6371469865",
+      "totalPrice": 200100,
+      "userId": "1"
     }
-  ]
+  ],
+"comment": [{
+  "id": "99451",
+  "email": "dipakroy9865@gmail.com",
+  "address": "2300075",
+  "contact": "6371469865",
+  "totalPrice": 200100,
+  "userId": "1"
+}
+]
 }

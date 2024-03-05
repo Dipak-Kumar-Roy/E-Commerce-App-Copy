@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
  trendyProducts:undefined | product[];
  currentIndex = 0;
 
- sliderData=[ 
+ sliderData=[
   { id: 1, text: "1" },
  { id: 2, text: "2" },
  { id: 3, text: "3" },
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
  imageData= [
   { name: 'Category 1', imageUrl: "https://media.istockphoto.com/id/493934948/photo/octocopter-copter-drone.jpg?s=2048x2048&w=is&k=20&c=iEMGfqXUqiupcTk_mKie94AS7L7Eq3WhprSe8J-qMGk=" },
   { name: 'Category 2', imageUrl: "https://images.pexels.com/photos/1087180/pexels-photo-1087180.jpeg" },
-  
+
   { name: 'Category 3', imageUrl: "https://images.pexels.com/photos/1170344/pexels-photo-1170344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
   { name: 'Category 4', imageUrl: "https://images.pexels.com/photos/3945676/pexels-photo-3945676.jpeg" },
   { name: 'Category 5', imageUrl: "https://images.pexels.com/photos/2044044/pexels-photo-2044044.jpeg" },
@@ -41,12 +41,12 @@ export class HomeComponent implements OnInit {
   // { name: 'Category 10', imageUrl: "https://images.pexels.com/photos/1757697/pexels-photo-1757697.jpeg" },
   // { name: 'Category 11', imageUrl: "https://images.pexels.com/photos/378268/pexels-photo-378268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
   // { name: 'Category 12', imageUrl: "https://images.pexels.com/photos/8572502/pexels-photo-8572502.jpeg?auto=compress&cs=tinysrgb&w=600" },
-  
+
 ];
  categories = [
   { name: 'Category 1', imageUrl: "https://media.istockphoto.com/id/493934948/photo/octocopter-copter-drone.jpg?s=2048x2048&w=is&k=20&c=iEMGfqXUqiupcTk_mKie94AS7L7Eq3WhprSe8J-qMGk=" },
   { name: 'Category 2', imageUrl: "https://images.pexels.com/photos/1087180/pexels-photo-1087180.jpeg" },
-  
+
   { name: 'Category 3', imageUrl: "https://images.pexels.com/photos/1170344/pexels-photo-1170344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
   { name: 'Category 4', imageUrl: "https://images.pexels.com/photos/3945676/pexels-photo-3945676.jpeg" },
   { name: 'Category 5', imageUrl: "https://images.pexels.com/photos/2044044/pexels-photo-2044044.jpeg" },
@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit {
   { name: 'Category 10', imageUrl: "https://images.pexels.com/photos/1757697/pexels-photo-1757697.jpeg" },
   { name: 'Category 11', imageUrl: "https://images.pexels.com/photos/378268/pexels-photo-378268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
   { name: 'Category 12', imageUrl: "https://images.pexels.com/photos/8572502/pexels-photo-8572502.jpeg?auto=compress&cs=tinysrgb&w=600" },
-  
+
 ];
 
 
@@ -71,10 +71,10 @@ export class HomeComponent implements OnInit {
 // }
 
   constructor(private product:ProductService) {}
-  
 
 
-  
+
+
 
   ngOnInit(): void {
     this.product.popularProducts().subscribe((data)=>{

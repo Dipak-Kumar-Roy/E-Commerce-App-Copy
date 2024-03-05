@@ -10,6 +10,7 @@ import { ProductService } from '../services/product.service';
 })
 export class ProductDetailsComponent implements OnInit {
   productData: undefined | product;
+  trendyProducts:undefined | product[];
   productQuantity: number = 1;
   removeCart = false;
   cartData: product | undefined;
@@ -48,6 +49,7 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
     console.warn(productId);
     productId && this.product.getProduct(productId).subscribe((result) => {
@@ -84,7 +86,15 @@ export class ProductDetailsComponent implements OnInit {
 
     })
 
+
+
+    this.product.trendyProducts().subscribe((data)=>{
+      this.trendyProducts=data;
+    })
   }
+
+
+
   changeImage(image: string): void {
     if (this.productData) {
       this.productData.image = image;
@@ -158,6 +168,8 @@ export class ProductDetailsComponent implements OnInit {
     }
     this.removeCart = false
   }
+
+
 
 
 }
