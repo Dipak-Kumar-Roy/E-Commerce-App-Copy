@@ -312,14 +312,15 @@ h6 {
 }
 
 .category-name-org {
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  padding: 10px;
 }
 
 .item5-org img {
   max-width: 120px;
   height: 107px;
   margin-top: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .prev-org{
   position: absolute;
