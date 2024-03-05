@@ -120,7 +120,7 @@
         </h1>
       </mat-expansion-panel-header>
 
-      <mat-card class="expansion_panel_header_0">
+      <div class="expansion_panel_header_0">
         <h2> Product Category</h2>
         <div class="expansion_panel_header_1">
           <mat-card class="expansion_panel_header_2">
@@ -145,14 +145,14 @@
           </mat-card>
 
         </div>
-      </mat-card>
+      </div>
       <mat-divider></mat-divider>
 
 
 
       <div class="view_button">
         <div *ngIf="showContent">
-          <mat-card class="expansion_panel_header_0">
+          <div class="expansion_panel_header_0">
             <h2> Product Category</h2>
             <div class="expansion_panel_header_1">
               <mat-card class="expansion_panel_header_2">
@@ -177,7 +177,7 @@
               </mat-card>
 
             </div>
-          </mat-card>
+          </div>
           <mat-divider></mat-divider>
 
         </div>
@@ -265,14 +265,19 @@
 
 <mat-card class="slider-container-org">
   <div class="slider-heading-org">
-    <h1>People also search these products</h1>
+    <h1>Trending Categories</h1>
     <div class="slider-wrap-org">
       <div class="slider-main-org">
-        <mat-card class="item   item-main" *ngFor="let item of trendyProducts">
-          <div class="item5-org">
+        <mat-card class="item  item-sed" *ngFor="let item of trendyProducts">
+           <a href="/details/{{item.id}}" style="text-decoration: none; color: black;">
+            <div class="item5-org">
             <div class="category-name-org">{{ item.name }}</div>
-            <img src="{{ item.image }}" alt="">
+            <!-- <a href="/details/{{item.id}}"> -->
+              <img   [src]="item.image" alt="{{item.name}}">
+            <!-- </a> -->
+
           </div>
+        </a>
         </mat-card>
       </div>
 
@@ -283,8 +288,6 @@
     </div>
   </div>
 </mat-card>
-
-
 
 
 

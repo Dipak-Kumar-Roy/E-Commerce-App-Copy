@@ -30,6 +30,9 @@
 
 
 
+
+
+
 .button-image {
   display: flex;
   flex-wrap: wrap;
@@ -280,66 +283,71 @@ h6 {
   background-image: linear-gradient(to right, #4a90e2, #8a2be2, #e52b50);
   border-radius: 15px;
   overflow: hidden;
-
-}
-.slider-heading-org{
-  margin-top: 20px;
-  margin-left: 25px;
-}
-.slider-wrap-org{
-  position: relative;
-  overflow: hidden;
-  height: 150px;
-}
-.slider-main-org{
-  position: absolute;
-  width: 1000%;
-}
-.item-main{
-  display: inline-block;
-  width: 225px;
-  height: 120px;
-  background-color: white;
-  position: relative;
-  margin: 0 12px;
-}
-.item5-org {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100px;
-  align-items: center;
 }
 
-.category-name-org {
-  /* margin-right: 10px; */
-  padding: 10px;
-}
+  .slider-heading-org{
+    margin-top: 20px;
+    /* margin-left: 25px; */
+  }
+  .slider-wrap-org{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+  }
+  .slider-main-org{
+    position: absolute;
+    width: 1000%;
+  }
+  .item-sed{
+    display: inline-block;
+    width: 228px;
+    height: 120px;
+    background-color: white;
+    position: relative;
+    margin: 0 12px;
+    vertical-align: middle;
+  }
+  .item5-org {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    align-items: center;
 
-.item5-org img {
-  max-width: 120px;
-  height: 107px;
-  margin-top: 20px;
-  object-fit: contain;
-}
-.prev-org{
-  position: absolute;
-  left:23px;
-  top: 50%;
-  transform: translate(-50% , -50%);
-}
-.prev-org:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
+  }
 
-.next-org{
-  position: absolute;
-  right:-20px;
-  top: 50%;
-  transform: translate(-50% , -50%);
-}
-.next-org:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
+  .category-name-org {
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .item5-org img {
+    max-width: 120px;
+    padding: 10px;
+    height: 107px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  .prev-org{
+    position: absolute;
+    left:5px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .prev-org:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .next-org{
+    position: absolute;
+    right:-40px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .next-org:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }

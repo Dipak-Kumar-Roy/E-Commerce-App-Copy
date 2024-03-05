@@ -350,6 +350,18 @@
       "quantity": 1,
       "userId": "8efc",
       "productId": "12"
+    },
+    {
+      "id": "7eac",
+      "name": "I phone 14",
+      "price": "100000",
+      "color": "black",
+      "category": "mobile",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 4,
+      "userId": "1",
+      "productId": "2"
     }
   ],
   "orders": [
@@ -458,13 +470,14 @@
       "userId": "1"
     }
   ],
-"comment": [{
-  "id": "99451",
-  "email": "dipakroy9865@gmail.com",
-  "address": "2300075",
-  "contact": "6371469865",
-  "totalPrice": 200100,
-  "userId": "1"
-}
-]
+  "comment": [
+    {
+      "id": "99451",
+      "email": "dipakroy9865@gmail.com",
+      "address": "2300075",
+      "contact": "6371469865",
+      "totalPrice": 200100,
+      "userId": "1"
+    }
+  ]
 }

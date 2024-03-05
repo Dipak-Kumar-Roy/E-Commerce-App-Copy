@@ -50,6 +50,12 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+    this.product.trendyProducts().subscribe((data)=>{
+      this.trendyProducts=data;
+    })
+
+
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
     console.warn(productId);
     productId && this.product.getProduct(productId).subscribe((result) => {
@@ -88,9 +94,7 @@ export class ProductDetailsComponent implements OnInit {
 
 
 
-    this.product.trendyProducts().subscribe((data)=>{
-      this.trendyProducts=data;
-    })
+
   }
 
 
