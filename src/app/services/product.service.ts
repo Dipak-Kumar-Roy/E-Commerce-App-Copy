@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
- 
+
   get(userId: any) {
     throw new Error('Method not implemented.');
   }

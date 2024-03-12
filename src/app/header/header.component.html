@@ -59,9 +59,12 @@
 
       <li><a mat-button routerLink="seller-auth">Seller</a></li>
       <li><a mat-button routerLink="user-auth">Login/Sign-up</a></li>
-      <li><a mat-button href="#">
-          <mat-icon>add_shopping_cart</mat-icon> Cart({{cartItems}})
-        </a></li>
+      <!-- <li><a mat-button [routerLink]="cartItems > 0 ? 'cart-page' : null" class="cart-button">
+        <mat-icon>shopping_cart</mat-icon> Cart ({{ cartItems }})
+      </a></li> -->
+      <li><a mat-button [routerLink]="cartItems > 0 ? 'cart-page' : null" class="cart-button">
+        <mat-icon>shopping_cart</mat-icon> Cart ({{ cartItems }})
+      </a></li>
     </ul>
     <ul *ngSwitchCase="'user'">
 

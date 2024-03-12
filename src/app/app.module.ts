@@ -37,6 +37,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -59,12 +61,14 @@ import { PrevDirective } from './directives/prev.directive';
     MyOrdersComponent,
     NextDirective,
     PrevDirective,
+    BreadcrumbComponent,
 
 
 
 
   ],
   imports: [
+    RouterLink,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

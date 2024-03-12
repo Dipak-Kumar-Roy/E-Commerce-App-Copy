@@ -17,50 +17,62 @@ const routes: Routes = [
   {
     component: HomeComponent,
     path: '',
+    data: { breadcrumb: 'Home' }
   },
   {
     component: SellerAuthComponent,
     path: 'seller-auth',
+    data: { breadcrumb: 'Seller-auth' }
   },
   {
     component:SellerHomeComponent,
     path:'seller-home',
-    canActivate:[AuthGuard]
+    canActivate:[AuthGuard],
+    data: { breadcrumb: 'Seller-home' }
   },
   {
     component:SellerAddProductComponent,
     path:'seller-add-product',
-    canActivate:[AuthGuard]
+    canActivate:[AuthGuard],
+    data: { breadcrumb: 'Seller-add-product' }
   },
   {
     component:SellerUpdateProductComponent,
     path:'seller-update-product/:id',
-    canActivate:[AuthGuard]
+    canActivate:[AuthGuard],
+    data: { breadcrumb: 'Seller-update-product'}
   },
   {
     component:SearchComponent,
     path:'search/:query',
+    data: { breadcrumb: 'search'}
+
   },
   {
     component:ProductDetailsComponent,
     path:'details/:productId',
+    data: { breadcrumb: 'Product-detail/:productId' }
   },
   {
     component:UserAuthComponent,
     path:'user-auth',
+    data: { breadcrumb: 'User-auth' }
   },
   {
     component:CartPageComponent,
     path:'cart-page',
+    data: { breadcrumb: 'Cart-page' }
   },
   {
     component:CheckoutComponent,
     path:'checkout',
+    data: { breadcrumb: 'Checkout' }
   }
   ,
   {
     component:MyOrdersComponent,
     path:'my-orders',
+    data: { breadcrumb: 'my-orders' }
   }
 ];
 

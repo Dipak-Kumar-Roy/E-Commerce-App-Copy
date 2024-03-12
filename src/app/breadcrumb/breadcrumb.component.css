@@ -1,0 +1,17 @@
+.breadcrumb__area
+{
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+}
+.breadcrumb__link
+{
+    margin: 0 10px;
+    background-color: transparent;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}

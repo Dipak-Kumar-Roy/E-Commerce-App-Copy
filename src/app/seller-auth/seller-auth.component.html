@@ -1,22 +1,23 @@
+<app-breadcrumb></app-breadcrumb>
 <mat-card class="seller-auth">
   <!-- Seller Sign-Up -->
   <div *ngIf="!showLogin" class="sign-up">
     <mat-card-title>Seller Sign-Up</mat-card-title>
     <mat-card-content>
-      <form #SellerSignUp="ngForm" (ngSubmit)="signUp(SellerSignUp.value)" class="common-form">
+      <form #sellerSignUpForm="ngForm" (ngSubmit)="signUp(sellerSignUpForm.value)" class="common-form">
         <mat-form-field class="form-input">
           <mat-label>Name</mat-label>
-          <input matInput ngModel name="name" type="text" placeholder="Enter your name">
+          <input matInput ngModel name="name" type="text" placeholder="Enter your name" required>
         </mat-form-field>
         <mat-form-field class="form-input">
           <mat-label>Email</mat-label>
-          <input matInput ngModel name="email" type="email" placeholder="Enter your email">
+          <input matInput ngModel name="email" type="email" placeholder="Enter your email" required>
         </mat-form-field>
         <mat-form-field class="form-input">
           <mat-label>Password</mat-label>
-          <input matInput ngModel name="password" type="password" placeholder="Enter your password">
+          <input matInput ngModel name="password" type="password" placeholder="Enter your password" required>
         </mat-form-field>
-        <button mat-raised-button color="primary" class="form-button">Sign Up</button>
+        <button mat-raised-button color="primary" class="form-button" type="submit">Sign Up</button>
         <a class="auth-toggle-link" (click)="openLogin()">Already have an account? <u><strong>Click to Login</strong></u></a>
       </form>
     </mat-card-content>
@@ -26,22 +27,23 @@
   <div *ngIf="showLogin" class="login">
     <mat-card-title>Seller Login</mat-card-title>
     <mat-card-content>
-      <p class="error-p">{{authError}}</p>
-      <form #SellerLogin="ngForm" (ngSubmit)="login(SellerLogin.value)" class="common-form">
+      <p class="error-p">{{ authError }}</p>
+      <form #sellerLoginForm="ngForm" (ngSubmit)="login(sellerLoginForm.value)" class="common-form">
         <mat-form-field class="form-input">
           <mat-label>Email</mat-label>
-          <input matInput ngModel name="email" type="email" placeholder="Enter your email">
+          <input matInput ngModel name="email" type="email" placeholder="Enter your email" required>
         </mat-form-field>
         <mat-form-field class="form-input">
           <mat-label>Password</mat-label>
-          <input matInput ngModel name="password" type="password" placeholder="Enter your password">
+          <input matInput ngModel name="password" type="password" placeholder="Enter your password" required>
         </mat-form-field>
-        <button mat-raised-button color="primary" class="form-button">Login</button>
+        <button mat-raised-button color="primary" class="form-button" type="submit">Login</button>
         <a class="auth-toggle-link" (click)="openSignUp()">Don't have an account? <u><strong>Click to Sign Up</strong></u></a>
       </form>
     </mat-card-content>
   </div>
 </mat-card>
+
 
 
 
@@ -83,7 +85,7 @@
 
 <!-- <mat-card class="sellers-auth">
 
-   Seller Sign-Up 
+   Seller Sign-Up
     <div *ngIf="!showLogin" class="sign-up">
       <mat-card-title>Seller Sign-Up</mat-card-title>
       <mat-card-content>
@@ -105,8 +107,8 @@
         </form>
       </mat-card-content>
     </div>
-  
-  Seller Login 
+
+  Seller Login
     <div *ngIf="showLogin" class="login">
       <mat-card-title>Seller Login</mat-card-title>
       <mat-card-content>
@@ -126,7 +128,7 @@
       </mat-card-content>
     </div>
   </mat-card> -->
-  
+
 
 
 

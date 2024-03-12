@@ -43,6 +43,8 @@ export class UserAuthComponent implements OnInit {
     let userId = user && JSON.parse(user).id;
     if (data) {
       let cartDataList: product[] = JSON.parse(data);
+      console.log("test");
+
 
       cartDataList.forEach((product: product, index) => {
         let cartData: cart = {

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { cart, product } from '../data-types';
 import { ProductService } from '../services/product.service';
-
+import { BreadcrumbService } from '../services/breadcrumb.service';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -37,7 +37,7 @@ export class ProductDetailsComponent implements OnInit {
 
 
   ];
-  constructor(private activeRoute: ActivatedRoute, private product: ProductService) { }
+  constructor(private activeRoute: ActivatedRoute, private product: ProductService, private breadcrumbService: BreadcrumbService) { }
 
   togglesContent() {
     this.displayContent = !this.displayContent;
@@ -56,8 +56,30 @@ export class ProductDetailsComponent implements OnInit {
     })
 
 
+
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
     console.warn(productId);
+
+
+     // this.breadcrumbService.setBreadcrumb(['[]Home', 'Products', 'Product-detail']);
+
+     this.breadcrumbService.setBreadcrumb([
+      {
+        name: "Home",
+        link: "/"
+      },
+      {
+        name: "Product",
+        link: "/product"
+      },
+      {
+        name: "Product Details",
+        link: `/product/${productId}`
+      }
+    ].map(item => JSON.stringify(item)));
+
+
+
     productId && this.product.getProduct(productId).subscribe((result) => {
       this.productData = result;
       // if (this.images.length > 0) {
@@ -91,6 +113,7 @@ export class ProductDetailsComponent implements OnInit {
 
 
     })
+
 
 
 
