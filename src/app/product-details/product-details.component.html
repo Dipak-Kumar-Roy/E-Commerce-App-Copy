@@ -55,7 +55,7 @@
         </button>
       </div>
       <div class="button-contr">
-        <button mat-raised-button color="primary" routerLink="/cart-page" class="button-comm">Buy Now</button>
+        <button mat-raised-button color="primary" routerLink="/cart-page" class="button-comm"  (click)="addToCart()">Buy Now</button>
         <button *ngIf="removeCart" mat-raised-button color="warn" class="form-button"
           (click)="removeToCart(productData.id)">Remove to Cart</button>
         <button *ngIf="!removeCart" mat-raised-button color="primary" class="form-button" (click)="addToCart()">Add to

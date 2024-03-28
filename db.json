@@ -302,123 +302,40 @@
       "password": ""
     }
   ],
-  "cart": [
-    {
-      "id": "12b8",
-      "name": "I phone 14",
-      "price": "100000",
-      "color": "black",
-      "category": "mobile",
-      "description": "An Apple Product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "quantity": 1,
-      "userId": "1",
-      "productId": "2"
-    }
-  ],
+  "cart": [],
   "orders": [
     {
-      "id": "4a2c",
+      "id": "029c",
       "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
-      "contact": "6371469865",
-      "totalPrice": 650,
-      "userId": "7be1"
-    },
-    {
-      "id": "0305",
-      "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "address": "Vill-Kumroul , Post-Haripure, PS-Ghanshyampure,   Ghanshyampure, Darbhanga,Bihar,Pin_code-847427",
       "contact": "6371469865",
       "totalPrice": 50100,
-      "userId": "7be1"
+      "userId": "1",
+      "date": "2022-08-01"
     },
     {
-      "id": "a97d",
+      "id": "dccd",
       "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
-      "contact": "6371469865",
-      "totalPrice": 50100,
-      "userId": "7be1"
-    },
-    {
-      "id": "3ae5",
-      "email": "",
-      "address": "",
-      "contact": "",
-      "totalPrice": 3100,
-      "userId": "7be1"
-    },
-    {
-      "id": "8307",
-      "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
-      "contact": "6371469865",
-      "totalPrice": 2100,
-      "userId": "7be1"
-    },
-    {
-      "id": "4a84",
-      "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
-      "contact": "6371469865",
-      "totalPrice": 1100,
-      "userId": "7be1"
-    },
-    {
-      "id": "82b6",
-      "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
+      "address": "Vill-Kumroul , Post-Haripure, PS-Ghanshyampure,   Ghanshyampure, Darbhanga,Bihar,Pin_code-847427",
       "contact": "6371469865",
       "totalPrice": 100100,
-      "userId": "7be1"
-    },
-    {
-      "id": "6c5d",
-      "email": "dipakroy9865@gmail.com",
-      "address": "Vill-Kumroul , Post-Haripure , PS-Ghanshyampure ,  Ghayanshyampure, Darbhanga ,Bihar",
-      "contact": "6371469865",
-      "totalPrice": 5100,
-      "userId": "7be1"
-    },
-    {
-      "id": "864f",
-      "email": "",
-      "address": "",
-      "contact": "",
-      "totalPrice": 209650,
       "userId": "1"
+
     },
     {
-      "id": "4133",
-      "email": "",
-      "address": "",
-      "contact": "",
-      "totalPrice": 5050,
-      "userId": "1"
-    },
-    {
-      "id": "08f4",
+      "id": "9e89",
       "email": "dipakroy9865@gmail.com",
-      "address": "2300075",
+      "address": "Vill-Kumroul , Post-Haripure, PS-Ghanshyampure,   Ghanshyampure, Darbhanga,Bihar,Pin_code-847427",
       "contact": "6371469865",
       "totalPrice": 50100,
       "userId": "1"
     },
     {
-      "id": "b5d5",
+      "id": "077f",
       "email": "dipakroy9865@gmail.com",
-      "address": "S/O : Praphulla Chandra Roy, ",
+      "address": "Vill-Kumroul , Post-Haripure, PS-Ghanshyampure,   Ghanshyampure, Darbhanga,Bihar,Pin_code-847427",
       "contact": "6371469865",
       "totalPrice": 50100,
-      "userId": "1"
-    },
-    {
-      "id": "9945",
-      "email": "dipakroy9865@gmail.com",
-      "address": "2300075",
-      "contact": "6371469865",
-      "totalPrice": 200100,
       "userId": "1"
     }
   ],

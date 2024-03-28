@@ -9,7 +9,7 @@ export interface login {
     password: string
 }
 export interface product {
-   
+
     name: string,
     price: number,
     category: string,
@@ -39,7 +39,7 @@ export interface priceSummary{
     delivery:number,
     total:number
   }
-  
+
   export interface order {
 
     email:string,
@@ -48,5 +48,6 @@ export interface priceSummary{
     totalPrice:number,
     userId:string,
     id:number|undefined,
-    
-  } 
+    // date:string | undefined,
+
+  }

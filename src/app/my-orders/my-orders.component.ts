@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
@@ -15,7 +13,7 @@ import { ProductService } from '../services/product.service';
 export class MyOrdersComponent implements OnInit {
 
   orderData: MatTableDataSource<order>;
-  displayedColumns: string[] = ['orderImage', 'orderId', 'price', 'status', 'cancelOrder'];
+  displayedColumns: string[] = ['orderImage', 'orderId', 'price', 'status',  'date','cancelOrder'];
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
@@ -33,7 +31,7 @@ export class MyOrdersComponent implements OnInit {
     const filterValue = (event.target as HTMLInputElement)?.value;
     this.orderData.filter = filterValue.trim().toLowerCase();
   }
-  
+
 
   // applyFilter(filterValue: string): void {
   //   this.orderData.filter = filterValue.trim().toLowerCase();
@@ -46,7 +44,7 @@ export class MyOrdersComponent implements OnInit {
           }
         });
       }
-    
+
       getOrderList(): void {
         this.product.orderList().subscribe((result) => {
           this.orderData.data = result;

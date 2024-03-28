@@ -13,7 +13,7 @@ export class CheckoutComponent implements OnInit {
   totalPrice: number | undefined;
   cartData: cart[] | undefined;
   orderMsg: string | undefined;
-  
+
   constructor(private product: ProductService, private router: Router) { }
 
   ngOnInit(): void {
