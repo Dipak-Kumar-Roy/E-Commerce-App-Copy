@@ -1,0 +1,30 @@
+.mainTable{
+  margin-top: 20px;
+}
+.filterContainer {
+  display: flex;
+
+}
+
+.datepicker {
+  display: flex; /* Nested flexbox to arrange datepicker items in a row */
+}
+
+.startdatepicker, .fitlerbyValue {
+  margin-right: 10px; /* Adjust margin between input boxes */
+}
+
+
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}

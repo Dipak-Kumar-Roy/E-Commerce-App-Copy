@@ -32,13 +32,16 @@ import {MatListModule} from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RouterLink } from '@angular/router';
+import { TablefilterComponent } from './tablefilter/tablefilter.component';
 
 
 
@@ -62,6 +65,7 @@ import { RouterLink } from '@angular/router';
     NextDirective,
     PrevDirective,
     BreadcrumbComponent,
+    TablefilterComponent,
 
 
 
@@ -87,7 +91,9 @@ import { RouterLink } from '@angular/router';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
