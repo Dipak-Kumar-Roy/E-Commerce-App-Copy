@@ -35,6 +35,10 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTabsModule } from '@angular/material/tabs';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 import { NextDirective } from './directives/next.directive';
@@ -42,6 +46,10 @@ import { PrevDirective } from './directives/prev.directive';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RouterLink } from '@angular/router';
 import { TablefilterComponent } from './tablefilter/tablefilter.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FilterPipe } from './navbar/shared/filter.pipe';
+import { BannerComponent } from './banner/banner.component';
+import { DatePipe } from '@angular/common';
 
 
 
@@ -66,6 +74,10 @@ import { TablefilterComponent } from './tablefilter/tablefilter.component';
     PrevDirective,
     BreadcrumbComponent,
     TablefilterComponent,
+    NavbarComponent,
+    FilterPipe,
+    BannerComponent,
+
 
 
 
@@ -93,9 +105,13 @@ import { TablefilterComponent } from './tablefilter/tablefilter.component';
     MatSortModule,
     MatExpansionModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSelectModule,
+    MatTabsModule,
+    FlexLayoutModule,
+    ScrollingModule ,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,9 @@
+
+.filter-dropdown{
+  margin-top:20px ;
+}
+
+
 .mainTable{
   margin-top: 20px;
 }
@@ -15,6 +21,10 @@
 }
 
 
+
+.table_datasource{
+  margin-bottom: 40px;
+}
 
 table {
   width: 100%;

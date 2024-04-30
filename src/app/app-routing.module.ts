@@ -13,6 +13,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 
+
 const routes: Routes = [
   {
     component: HomeComponent,
@@ -73,7 +74,8 @@ const routes: Routes = [
     component:MyOrdersComponent,
     path:'my-orders',
     data: { breadcrumb: 'my-orders' }
-  }
+  },
+
 ];
 
 @NgModule({

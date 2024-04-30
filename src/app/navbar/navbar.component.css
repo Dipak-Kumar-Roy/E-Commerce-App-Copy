@@ -1,0 +1,142 @@
+.main-header {
+  /* margin-top: 60px; */
+  transition: all 250ms ease-in-out;
+  position: relative;
+  height: 60px;
+}
+
+.main-header.hidden {
+  opacity: 0;
+}
+
+.search-block {
+  width: 0%;
+  right: 0;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  background: #fff;
+}
+
+.search-block.active {
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  z-index: 1000;
+}
+
+.search-block .search-control {
+  flex: 1;
+  font-size: 1rem;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+}
+
+.mdc-list-item__primary-text{
+  height:100px;
+  margin: 0px;
+
+}
+.list_details{
+  display: flex;
+
+  margin: 10px;
+}
+
+
+
+
+
+
+
+/* this is just a css  */
+
+header {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  color: black;
+  font: 15px;
+  position: relative;
+
+}
+
+.logo svg {
+  height: 35px;
+  width: 85px;
+
+}
+
+.submenu {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0px;
+  margin-top: 18px;
+
+}
+
+  .submenu a {
+    text-decoration: none;
+    margin: 0px 10px;
+    letter-spacing: normal;
+    color: #000000b0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.submenu a:hover {
+    color: #000;
+    text-decoration-color: rgba(255, 0, 0, 0.411)  !important;
+    text-decoration: underline;
+}
+
+
+
+.header_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+
+}
+
+.search_box{
+
+  padding: 0px 12px;
+  margin-top: 18px;
+
+
+}
+
+.search_box button mat-icon {
+font-size: 23px;
+}
+
+
+.seach__input{
+  position: absolute;
+  margin-top: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 57px;
+  z-index: 10;
+  outline: none;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+
+
+/* shop by categories css */
+

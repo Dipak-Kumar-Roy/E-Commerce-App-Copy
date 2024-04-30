@@ -55,6 +55,7 @@ const DATA: UserData[] = [
   styleUrls: ['./tablefilter.component.css']
 })
 export class TablefilterComponent implements AfterViewInit {
+  selectedFilter:string | undefined;
   displayedColumns: string[] = ['id', 'name', 'age', 'gender', 'date'];
   dataSource: MatTableDataSource<UserData>;
 

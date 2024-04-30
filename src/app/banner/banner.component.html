@@ -1,0 +1,98 @@
+<div class="banner-main_div">
+  <div class="banner_element_tittle">
+    <h2>boAt X IPL</h2>
+    <button mat-button color="primary" class="material_view_button">
+      View All
+      <div class="icon-container">
+        <div class="circle-icon"></div>
+        <mat-icon class="material_view_all_icon">chevron_right</mat-icon>
+      </div>
+    </button>
+  </div>
+
+  <img src="assets/Strip_Web_1_1600x.jpg" alt="image not found">
+
+
+
+  <!-- Full-desktop banner_timer section -->
+  <div class="banner_timer full-desktop">
+    <p>Ending in <span id="hours">{{ hours }}</span> Hours : <span id="minutes">{{ minutes }}</span> Min : <span
+        id="seconds">{{ seconds }}</span> sec</p>
+  </div>
+
+
+  <!-- Smaller-screen banner_timer section -->
+  <div class="banner_timer smaller-screen">
+    <p class="number_watch_text">Ending in</p>
+    <p>
+      <span>{{ hours }}</span>
+      <span>{{ minutes }}</span>
+      <span>{{ seconds }}</span>
+    </p>
+    <p id="banner_watch_text">
+      <span>Hour</span>
+      <span>Min</span>
+      <span>Sec</span>
+    </p>
+
+  </div>
+</div>
+
+
+<br><br><br><br>
+
+
+
+<div class="blog_main_div">
+  <h2>Blogs</h2>
+  <div class="blog_button">
+    <button mat-button> Popular</button>
+    <button mat-button> Latest</button>
+  </div>
+  <div class="blog_mat_card_div">
+    <mat-card class="blog_mat_card" *ngFor="let blogItem of blogList">
+      <div class="blog_mat_card_image_div">
+        <a routerLink="seller-auth"> <img [src]="blogItem.imageUrl" alt=""></a>
+      </div>
+      <div class="blog_mat_card_tittle_div">
+        <a routerLink="seller-auth">
+          <p>{{ blogItem.date }}</p>
+        </a>
+        <a routerLink="seller-auth">
+          <h2>{{ blogItem.title }}</h2>
+        </a>
+        <a routerLink="seller-auth">
+          <p>{{blogItem.content}}</p>
+        </a>
+
+        <button mat-button>Read More</button>
+      </div>
+    </mat-card>
+  </div>
+
+
+</div>
+
+
+
+
+<mat-card>
+  <h2>BESTSELLERS DRONES</h2>
+
+  <div class="bestSellerDrone">
+    <mat-card class="bestSellerDroneCard" *ngFor="let drone of drones_list">
+      <div class="best_Seller_Drone_Image">
+        <img [src]="drone.images" alt=" image not found">
+      </div>
+      <div class="best_Seller_Drone_Tittle">
+        <div class="best_seller_drone_name">
+          <h2>{{ drone.name }}</h2>
+          <p>{{ drone.price }}</p>
+        </div>
+        <div class="best_seller_drone_Shop_Button">
+          <a mat-flat-button color="primary" [href]="drone.shopLink" target="_blank">SHOP NOW</a>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</mat-card>
